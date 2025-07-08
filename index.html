@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risto Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+<!-- CookieConsent CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<!-- CookieConsent JS -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+<meta name="description" content="Agenzia di marketing per ristoranti. Ti aiutiamo a riempire il tuo locale con strategie social personalizzate a partire da 199€ al mese.">
+<meta name="keywords" content="marketing ristoranti, social media ristorazione, pubblicità ristoranti, agenzia marketing food, clienti ristorante">
+<meta name="author" content="Matteo Vavusotto">
+ <script src="./js/script.js"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md fixed-top shadow-sm ">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+  <img src="../img/logo_img.png" alt="Logo" class="img-fluid icon" loading="lazy" >
+  <span class="brand-text fs-9 fs-md-5 fs-lg-4">Risto Agency</span>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <a href="#" class="btn btn-custom mt-2 mt-md-0" data-bs-toggle="modal" data-bs-target="#contactModal" aria-label="Contattaci Risto Agency">Contattaci</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+        <form action="https://formspree.io/f/tuoCodiceForm" method="POST">
+           <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <h2 class="modal-title mb-3">Parlaci di te</h2>
+          <input type="hidden" name="form_origin" value="Modal" />
+          <div class="mb-2">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+
+          <div class="mb-2">
+            <label for="surname" class="form-label">Cognome</label>
+            <input type="text" class="form-control" name="surname" required>
+          </div>
+
+          <div class="mb-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+
+          <div class="mb-2">
+            <label for="phone" class="form-label">Telefono</label>
+            <input type="tel" class="form-control" name="phone" required>
+          </div>
+
+          <div class="mb-2">
+            <label for="brand" class="form-label">Nome Attività</label>
+            <input type="text" class="form-control" name="brand" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="province" class="form-label">Provincia Attività</label>
+            <input type="text" class="form-control" name="province" required>
+          </div>
+
+          <button type="submit" class="btn btn-custom w-100" aria-label="Contattaci Risto Agency">Invia</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="text-center d-flex align-items-center" >
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h1 class="display-5 fw-bold light-text">
+          Sei il <span class="highlights">miglior ristorante </span>della tua città ma i tuoi competitor sono più pieni di te
+        </h1>
+        <h3 class="mt-5 light-text">
+          Anche tu vorresti farti conoscere sui social come loro ma non sai neanche da dove iniziare
+        </h3>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-custom px-7 py-7 w-md-auto mt-md-5 fs-5"
+          data-bs-toggle="modal" data-bs-target="#contactModal">
+  Contattaci
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOCUS -->
+<section id="focus" class="py-5 text-white">
+  <div class="container px-3">
+    <div class="row justify-content-center mb-5 my-5 py5">
+      <div class="col-lg-8 text-center">
+        <h1 class="display-4 fw-bold highlights">Come faccio a saperlo?</h1>
+        <h3 class="mt-5 fs-3 ">Sono a contatto con ristoratori come te tutti i giorni e ciò di cui mi parli sono sempre i soliti problemi</h3>
+      </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="row align-items-center mb-5 py-5">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img src="./img/img-prova.jpg" class="img-fluid rounded" alt="Immagine 1" loading="lazy">
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="fw-bold fs-1">Entrano <span class="highlights">sempre i soliti clienti</span> da quella maledetta porta</h2>
+        <h4 class="mt-3 fs-5 fw-bold">Una volta che i clienti entrano da quella porta, dopo non ti mollano più perché riconoscono la qualità di quello che offri</h4>
+      </div>
+    </div>
+
+    <!-- Testo centrale -->
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <h2 class="fw-bold fs-1">Ma il vero problema è <span class="highlights">farti conoscere</span></h2>
+        <h2 class="fs-1 fw-bold">Sono <span class="highlights">sempre i soliti</span> clienti<br> Mai una faccia nuova</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center mb-5 ">
+      <div class="col-lg-8">
+        <h4 class="fs-3 fw-bold">Allora, vedendo che tutti gli altri locali che si presentano online lavorano più di te hai iniziato a fare qualche foto e video.</h4>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="row align-items-center flex-md-row-reverse mb-5 py-5">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img src="./img/img-prova.jpg" class="img-fluid rounded" alt="Immagine 2" loading="lazy">
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="fw-bold fs-1"><span class="highlights ">Ovviamente</span> però ... hai dovuto interrompere</h2>
+        <h4 class="mt-3 fs-5 fw-bold">Già cuoco, cameriere e contabile del tuo locale.<br> Era invivibile. <br>Allora hai provato a rivolgerti a chi lo fa come lavoro...</h4>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img src="./img/img-prova.jpg" class="img-fluid rounded" alt="Immagine 3" loading="lazy">
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="fw-bold fs-1">Ti hanno fatto preventivi che ti hanno <span class="highlights">portato allo svenimento</span></h2>
+        <h4 class="mt-3 fs-5 fw-bold">Ti preparano preventivi da migliaia di euro mensili, magari anche vincolanti. Ti promettono risultati da capogiro, ma poi scopri che <span class="highlights">l'unico ristorante con cui hanno lavorato è il kebabbaro sotto casa.</span> <br> E nonostante ciò ti dicono che in tutte le attività <span class="highlights">si fa marketing allo stesso modo</span></h4>
+      </div>
+    </div>
+
+    <!-- Finale -->
+    <div class="row justify-content-center text-center mb-3 py-4">
+      <div class="col-lg-8">
+        <h2 class="fw-bold fs-3">Ma lo sappiamo entrambi</h2>
+        <h1 class="fw-bold display-6 highlights">Non è affatto così</h1>
+      </div>
+    </div>
+      <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-custom px-7 my-5 py-4 fs-5 w-md-auto mt-5 mt-md-5"
+          data-bs-toggle="modal" data-bs-target="#contactModal">
+  Scopri come avere più clienti
+</a>
+      </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8 py-5">
+        <h2 class="fw-bold fs-3">Perché ti dico questo?</h2>
+        <h1 class="fw-bold display-6 highlights">So di poterti capire meglio di chiunque altro</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-2 text-white text-center">
+  <div class="container">
+    <img src="./img/mattia.png" alt="Mattia" class="rounded-circle img-fluid mb-4 profile-img" loading="lazy" alt="Mattia">
+    <h3 class="fs-2 fw-semibold py-3 my-3">
+      Piacere <span class="highlights">Mattia</span>, sono il fondatore di <span class="highlights">Ebeniw</span> <br> la prima distribuzione di vino per crescita nel 2025 <br> su Modena, Reggio Emilia e Parma<br>
+      E dato che sono ogni giorno a contatto con persone come te <br> ho deciso finalmente di darti <span class="highlights">il mio supporto</span>.
+    </h3>
+  </div>
+<section id="vaucher" class="py-5 text-center">
+  <div class="container">
+    <!-- Banner promozionale -->
+    <div class="p-4 rounded-4 shadow-lg mb-5 bg-danger text-white">
+      <h2 class="display-5 fw-bold">
+        Affidati a <mark class="bg-white text-danger">Risto Agency</mark><br>
+        e porta la tua attività online a soli <mark class="bg-white text-danger"> <br>199€ al mese</mark>
+      </h2>
+    </div>
+    
+<section id="services" class="py-5">
+  <div class="container">
+    <!-- Titolo -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold display-5">cosa ti offriamo con questi <span class="highlights">spiccioli</span>?</h2>
+      </div>
+    </div>
+
+    <!-- Servizi -->
+    <div class="row text-center g-4">
+      <!-- Servizio 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card p-4 border rounded shadow-sm h-100">
+          <div class="mb-3">
+            <!-- Icona SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+</svg>
+          </div>
+          <h5 class="fw-semibold">Produzione contenuti</h5>
+          <p class="mt-2">Foto e grafiche professionali che trasmettono la bontà dei tuoi piatti.</p>
+        </div>
+      </div>
+
+      <!-- Servizio 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card p-4 border rounded shadow-sm h-100">
+          <div class="mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+</svg>
+          </div>
+          <h5 class="fw-semibold mt-2">Calendario settimanale</h5>
+          <p class="mt-2">Flusso costante di contenuti per essere sempre visibile ai tuoi clienti.</p>
+        </div>
+      </div>
+
+      <!-- Servizio 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card p-4 border rounded shadow-sm h-100">
+          <div class="mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg>
+          </div>
+          <h5 class="fw-semibold mt-2">Pubblicazione</h5>
+          <p class="mt-2">Ci occupiamo noi di tutto. Tu pensi al ristorante, noi ai tuoi social.</p>
+        </div>
+      </div>
+
+      <!-- Servizio 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card p-4 border rounded shadow-sm h-100">
+          <div class="mb-3">
+            <svg width="64" height="64" fill="#9c27b0" viewBox="0 0 16 16">
+              <path d="M2 2h12v12H2V2zm1 1v10h10V3H3z"/>
+              <path d="M4 4h8v1H4V4zM4 6h8v1H4V6zM4 8h5v1H4V8z"/>
+            </svg>
+          </div>
+          <h5 class="fw-semibold">Produzione eventi</h5>
+          <p class="mt-2">Locandine e materiali per eventi e serate speciali su misura per te.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonianze" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4 py-3 display-5">Cosa dicono i nostri clienti</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>"Dopo un mese con Risto Agency abbiamo raddoppiato le prenotazioni del weekend."</p>
+          <p class="blockquote-footer quote">Giovanni, Osteria Modenese</p>
+        </blockquote>
+      </div>
+            <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote">
+          <p>"Finalmente una strategia social che funziona davvero!"</p>
+          <p class="blockquote-footer quote">Laura, Trattoria Bella Vita</p>
+        </blockquote>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote">
+          <p>"Servizio impeccabile. Clienti più soddisfatti e più numerosi."</p>
+          <p class="blockquote-footer quote">Marco, Ristorante Il Gusto</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="d-md-none fixed-bottom bg-danger text-white text-center p-2 shadow">
+  <a href="#" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Compila il form ora</a>
+</div>
+  <section id="contact">
+      <div class="contact-form bg-white p-4 p-md-5 rounded-4 shadow my-5">
+      <h5 class="mb-4 fw-bold display-6 ">Compila il form per essere ricontattato</h5>
+      <form form action="https://formspree.io/f/tuoCodiceForm" method="POST">
+        <input type="hidden" name="form_origin" value="Modal" />
+        <div class="mb-3 text-start text-dark">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+
+          <div class="mb-3 text-start text-dark">
+            <label for="surname" class="form-label">Cognome</label>
+            <input type="text" class="form-control" name="surname" required>
+          </div>
+
+          <div class="mb-3 text-start text-dark">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+
+          <div class="mb-3 text-start text-dark">
+            <label for="phone" class="form-label">Telefono</label>
+            <input type="tel" class="form-control" name="phone" required>
+          </div>
+
+          <div class="mb-3 text-start text-dark">
+            <label for="brand" class="form-label">Nome Attività</label>
+            <input type="text" class="form-control" name="brand" required>
+          </div>
+
+          <div class="mb-3 text-start text-dark">
+            <label for="province" class="form-label">Provincia Attività</label>
+            <input type="text" class="form-control" name="province" required>
+          </div>
+
+        <button type="submit" class="btn btn-custom px-7 py-7 w-md-auto mt-md-5 fs-5" aria-label="Contattaci Risto Agency">Richiedi il tuo piano social</button>
+      </form>
+    </div>
+  </div>
+
+  </section>
+<footer class=" py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <!-- Dati Azienda -->
+      <div class="text-center text-md-start small">
+        EBENIW DI MATTIA RUOCCO <br> <br>via Giardini Sud 172, 41026 Pavullo nel Frignano (MO) <br> 
+        C.F. RCCMTT03S18G393V - P.IVA 04106650361 <br>
+        <a href="mailto:ebeniw.experience@gmail.com" class="text-decoration-none text-reset">ebeniw.experience@gmail.com</a> - 
+        PEC: <a href="mailto:ebeniw@cert.cna.it" class="text-decoration-none text-reset">ebeniw@cert.cna.it</a>
+      </div>
+
+      <!-- Social -->
+      <div class="text-center text-md-end">
+        <a href="https://www.instagram.com" target="_blank" class="text-reset me-3 fs-2">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-reset me-3 fs-2">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://wa.me/39XXXXXXXXXX" class="text-reset fs-2 me-3">
+  <i class="bi bi-whatsapp"></i>
+</a>
+      </div>
+    </div>
+
+    <!-- Credito Autore -->
+    <div class="text-end mt-2 small text-secondary">
+      @powered by Matteo Vavusotto
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- Script della libreria -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.0/dist/cookieconsent.js"></script>
+</body>
+</html>
